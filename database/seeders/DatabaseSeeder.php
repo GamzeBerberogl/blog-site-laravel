@@ -3,7 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,11 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        $this->call(UserSeeder::class);
+        $users = User::all();
+        
+        // 10 kategori ve her kategori için 2 post
+        Category::factory(10)->create()->each(function ($category) use ($users) {
+            Post::factory(2)->create([
+                'category_id' => $category->id,
+                'user_id' => $users->random()->id,
+            ]);
+        });
     }
 }
