@@ -17,10 +17,9 @@ Docker konteynerlerini başlatmak için Sail'i kullanarak bağımlılıkları y�
 ./vendor/bin/sail build
 ./vendor/bin/sail up -d
 
-Çevre değişkenlerini ayarlayın:
+## .env oluşturun: 
 cp .env.example .env
 
-## .env: 
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
