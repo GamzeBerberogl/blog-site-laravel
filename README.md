@@ -10,8 +10,8 @@ Bu proje, Laravel kullanılarak oluşturulmuş basit bir blog CRUD (Create, Read
 ## Kurulum
 Projeyi klonlayın:
 
-   git clone https://github.com/GamzeBerberogl/blog-site-laravel/
-   cd blog-site-laravel
+git clone https://github.com/GamzeBerberogl/blog-site-laravel/
+cd blog-site-laravel
 
 Docker konteynerlerini başlatmak için Sail'i kullanarak bağımlılıkları yükleyin:
 ./vendor/bin/sail build
