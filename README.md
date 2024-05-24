@@ -1,4 +1,4 @@
-# Blog CRUD Application
+# Blog Application
 
 Bu proje, Laravel kullanılarak oluşturulmuş basit bir blog CRUD (Create, Read, Update, Delete) uygulamasıdır. Uygulama, kullanıcıların kayıt olup giriş yapabileceği, blog gönderileri oluşturabileceği, düzenleyebileceği ve silebileceği işlevleri içerir. Ayrıca, kullanıcılar belirli kategoriler altında blog gönderilerini listeleyebilir ve abonelik işlevi ile yeni gönderiler hakkında bilgilendirilebilirler.
 
