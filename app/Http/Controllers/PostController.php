@@ -69,6 +69,7 @@ class PostController extends Controller
 
     public function edit($id)
     {
+
         $post = Post::findOrFail($id);
         $categories = Category::all();
 
@@ -82,6 +83,7 @@ class PostController extends Controller
 
     public function update(Request $request, $id)
     {
+
         $request->validate([
             'title' => 'required',
             'body' => 'required',
