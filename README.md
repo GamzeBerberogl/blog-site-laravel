@@ -18,26 +18,6 @@ Docker konteynerlerini başlatmak için Sail'i kullanarak bağımlılıkları y�
 ./vendor/bin/sail up -d
 
 ## .env oluşturun: 
-cp .env.example .env
-
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=sail
-DB_PASSWORD=password
-
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME="laravelblogtestmail@gmail.com"
-MAIL_PASSWORD="dtjksmkvonejhcff"
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=laravelblogtestmail@gmail.com
-MAIL_FROM_NAME="${APP_NAME}"
-
-
-./vendor/bin/sail artisan key:generate
 
 Veritabanını migrate edin ve seed edin:
 ./vendor/bin/sail artisan migrate --seed
